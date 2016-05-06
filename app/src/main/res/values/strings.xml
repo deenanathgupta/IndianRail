@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">"Indian Rail "</string>
+    <string name="pnrstatus">PNR STATUS</string>
+    <string name="trainbyno">Train by no</string>
+    <string name="trainstatus">Train Status</string>
+    <string name="searchTrain">Search Train</string>
+    <string name="checkfare">Train Fare</string>
+    <string name="setavailability">Availability</string>
+    <string name="arraivalatstation">Arrival at ST.</string>
+    <string name="cancelTrain">Cancel Train</string>
+    <string name="enterpnr">Enter PNR No</string>
+    <string name="btnsearch">Find</string>
+    <string name="ok">OK</string>
+    <string name="journydetails">Journey Details</string>
+    <string name="journy">No</string>
+    <string name="journytrainName">Name</string>
+    <string name="Boardingpoint">Board Po.</string>
+</resources>

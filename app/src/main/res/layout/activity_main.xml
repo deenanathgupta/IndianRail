@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7DBDD"
+    tools:context="indianrail.robosoft.com.indianrail.MainActivity">
+
+    <include layout="@layout/appbar" android:id="@+id/actionbar"/>
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionbar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:weightSum="4">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_weight="0.2"
+            android:background="@color/iconColor"
+            android:padding="@dimen/margin"
+            android:src="@drawable/ic_toc_white_24dp" />
+
+        <Button
+            android:id="@+id/btnPnrStatus"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.8"
+            android:background="@color/buttonColor"
+            android:paddingLeft="@dimen/margin"
+            android:text="@string/pnrstatus"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_weight="0.2"
+            android:background="@color/iconColor"
+            android:padding="@dimen/margin"
+            android:src="@drawable/ic_search_white_24dp" />
+
+        <Button
+            android:id="@+id/btnSearchTrain"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_weight="1.8"
+            android:background="@color/buttonColor"
+            android:paddingLeft="@dimen/margin"
+            android:text="@string/searchTrain"
+            android:textAlignment="textStart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row1"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:weightSum="4">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_weight="0.2"
+            android:background="@color/iconColor"
+            android:padding="@dimen/margin"
+            android:src="@drawable/ic_train_white_24dp" />
+
+        <Button
+            android:id="@+id/btnTrainByNo"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.8"
+            android:background="@color/buttonColor"
+            android:paddingLeft="@dimen/margin"
+            android:text="@string/trainbyno"
+            android:textAlignment="textStart" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_weight="0.2"
+            android:background="@color/iconColor"
+            android:padding="@dimen/margin"
+            android:src="@drawable/ic_location_on_white_24dp" />
+
+        <Button
+            android:id="@+id/btnTrainStatus"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_weight="1.8"
+            android:background="@color/buttonColor"
+            android:paddingLeft="@dimen/margin"
+            android:text="@string/trainstatus"
+            android:textAlignment="textStart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row2"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:weightSum="4">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_weight="0.2"
+            android:background="@color/iconColor"
+            android:padding="@dimen/margin"
+            android:src="@drawable/ic_event_seat_white_24dp" />
+
+        <Button
+            android:id="@+id/btnAvailabilty"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.8"
+            android:background="@color/buttonColor"
+            android:paddingLeft="@dimen/margin"
+            android:text="@string/setavailability"
+            android:textAlignment="textStart" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_weight="0.2"
+            android:background="@color/iconColor"
+            android:padding="@dimen/margin"
+            android:src="@drawable/ic_attach_money_white_24dp" />
+
+        <Button
+            android:id="@+id/btnTrainFare"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_weight="1.8"
+            android:background="@color/buttonColor"
+            android:paddingLeft="@dimen/margin"
+            android:text="@string/checkfare"
+            android:textAlignment="textStart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row3"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:weightSum="4">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_weight="0.2"
+            android:background="@color/iconColor"
+            android:padding="@dimen/margin"
+            android:src="@drawable/ic_near_me_white_24dp" />
+
+        <Button
+            android:id="@+id/btnArrivalAtStation"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.8"
+            android:background="@color/buttonColor"
+            android:paddingLeft="@dimen/margin"
+            android:text="@string/arraivalatstation"
+            android:textAlignment="textStart" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_weight="0.2"
+            android:background="@color/iconColor"
+            android:padding="@dimen/margin"
+            android:src="@drawable/ic_cancel_white_24dp" />
+
+        <Button
+            android:id="@+id/btnCancelTrain"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/heightbutton"
+            android:layout_weight="1.8"
+            android:background="@color/buttonColor"
+            android:paddingLeft="@dimen/margin"
+            android:text="@string/cancelTrain"
+            android:textAlignment="textStart" />
+    </LinearLayout>
+</RelativeLayout>
