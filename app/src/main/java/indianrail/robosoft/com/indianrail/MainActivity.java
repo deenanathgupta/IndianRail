@@ -19,18 +19,21 @@ import com.android.volley.toolbox.Volley;
 import indianrail.robosoft.com.indianrail.constants.AppData;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btnPnrStatus;
+    private Button btnPnrStatus, btnSearchTrain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolBarLayout = (Toolbar) findViewById(R.id.appBar);
+        Toolbar toolBarLayout = (Toolbar) findViewById(R.id.actionbar);
+        setSupportActionBar(toolBarLayout);
+
         btnPnrStatus = (Button) findViewById(R.id.btnPnrStatus);
         btnPnrStatus.setOnClickListener(this);
+        btnSearchTrain = (Button) findViewById(R.id.btnSearchTrain);
+        btnSearchTrain.setOnClickListener(this);
 
-        if (toolBarLayout != null)
-            setSupportActionBar(toolBarLayout);
+
     }
 
     @Override
@@ -38,6 +41,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btnPnrStatus:
                 startActivity(new Intent(this, PnrStatusActivity.class));
+                break;
+            case R.id.btnSearchTrain:
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent, "Select Picture"), 1);
                 break;
         }
     }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/sno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pnrrowmargin"
+        android:layout_marginRight="@dimen/margin"
+        android:text="S.No" />
+
+    <TextView
+        android:id="@+id/txtBookingStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/pnrrowmargin"
+        android:text="Booking Status" />
+
+    <TextView
+        android:id="@+id/txtcurrentstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/pnrrowmargin"
+        android:text="Current Status" />
+
+    <TextView
+        android:id="@+id/txtcoachPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/pnrrowmargin"
+        android:text="Coach Position" />
+</LinearLayout>

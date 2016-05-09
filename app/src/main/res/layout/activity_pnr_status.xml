@@ -60,5 +60,167 @@
             android:layout_gravity="center_horizontal|center_vertical"
             android:text="PNR Status"
             android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/layoutRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/trainname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/chartstatus"
+                        android:layout_alignParentStart="true"
+                        android:paddingTop="4dp"
+                        android:text="Train Name           :" />
+
+                    <TextView
+                        android:id="@+id/from"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/chartstatus"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/trainname"
+                        android:paddingTop="4dp"
+                        android:text="From Station         : " />
+
+                    <TextView
+                        android:id="@+id/to"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/chartstatus"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/from"
+                        android:paddingTop="4dp"
+                        android:text="To Station              :" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/to"
+                        android:paddingTop="4dp"
+                        android:text="Date of Journey    :" />
+
+                    <TextView
+                        android:id="@+id/chartstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/date"
+                        android:paddingTop="4dp"
+                        android:text="Chart Status          :" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTrainName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/trainname"
+                        android:paddingTop="4dp"
+                        android:text="TrainName" />
+
+                    <TextView
+                        android:id="@+id/txtFromStation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTrainName"
+                        android:layout_toRightOf="@id/from"
+                        android:paddingTop="4dp"
+                        android:text="Station Name" />
+
+                    <TextView
+                        android:id="@+id/txtToStation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtFromStation"
+                        android:layout_toRightOf="@id/to"
+                        android:paddingTop="4dp"
+                        android:text="To Station" />
+
+                    <TextView
+                        android:id="@+id/txtdateOfJourny"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtToStation"
+                        android:layout_toRightOf="@id/date"
+                        android:paddingTop="4dp"
+                        android:text="Journey Date" />
+
+                    <TextView
+                        android:id="@+id/txtChartStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtdateOfJourny"
+                        android:layout_toEndOf="@+id/date"
+                        android:paddingTop="4dp"
+                        android:text="Chart Status" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutRow1"
+                android:layout_marginTop="@dimen/margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pnrrowmargin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:text="S.No" />
+
+                <TextView
+                    android:id="@+id/txtBookingStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/pnrrowmargin"
+                    android:text="Booking Status" />
+
+                <TextView
+                    android:id="@+id/txtcurrentstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/pnrrowmargin"
+                    android:text="Current Status" />
+
+                <TextView
+                    android:id="@+id/txtcoachPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/pnrrowmargin"
+                    android:text="Coach Position" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pnrStatusRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layoutRow1"
+                android:layout_marginTop="@dimen/recyclerview_margintop"></android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
     </FrameLayout>
 </RelativeLayout>
