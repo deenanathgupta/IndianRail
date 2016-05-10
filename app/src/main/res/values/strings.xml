@@ -7,7 +7,7 @@
     <string name="checkfare">Train Fare</string>
     <string name="setavailability">Availability</string>
     <string name="arraivalatstation">Arrival at ST.</string>
-    <string name="cancelTrain">Cancel Train</string>
+    <string name="cancelTrain">Cancelled Train</string>
     <string name="enterpnr">Enter PNR No</string>
     <string name="btnsearch">Find</string>
     <string name="ok">OK</string>
