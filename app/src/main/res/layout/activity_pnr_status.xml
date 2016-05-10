@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D7DBDD"
+    android:background="@android:color/white"
     tools:context="indianrail.robosoft.com.indianrail.PnrStatusActivity">
 
     <include
@@ -28,6 +28,7 @@
             android:layout_weight="2.3">
 
             <EditText
+                android:id="@+id/edtPnrNo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/enterpnr"
@@ -36,6 +37,7 @@
         </android.support.design.widget.TextInputLayout>
 
         <Button
+            android:id="@+id/btnok"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.7"
@@ -47,19 +49,12 @@
     </LinearLayout>
 
     <FrameLayout
-        android:id="@+id/row2"
+        android:id="@+id/PnrsStatusrow2"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/row1"
         android:layout_marginTop="20dp">
-
-        <TextView
-            android:id="@+id/txtpnrstatus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:text="PNR Status"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <RelativeLayout
             android:layout_width="match_parent"

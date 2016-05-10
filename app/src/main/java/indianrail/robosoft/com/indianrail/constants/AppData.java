@@ -5,4 +5,5 @@ package indianrail.robosoft.com.indianrail.constants;
  */
 public class AppData {
     public static final String APIKEY = "jxqbq3625";
+    public static final String INDIANRAILAPI = "http://api.railwayapi.com";
 }

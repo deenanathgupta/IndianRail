@@ -1,5 +1,7 @@
 package indianrail.robosoft.com.indianrail.network;
 
+import android.util.Log;
+
 import com.android.volley.NetworkResponse;
 import com.android.volley.ParseError;
 import com.android.volley.Request;
@@ -11,6 +13,7 @@ import com.google.gson.JsonSyntaxException;
 import java.io.UnsupportedEncodingException;
 import java.util.Map;
 
+
 /**
  * Created by deena on 6/5/16.
  */
@@ -20,11 +23,10 @@ public class GsonRequest<T> extends Request<T> {
     private Map<String, String> headers;
     private final Response.Listener<T> listener;
 
-    public GsonRequest(String url, Class<T> clazz, Map<String, String> headers,
+    public GsonRequest(String url, Class<T> clazz,
                        Response.Listener<T> listener, Response.ErrorListener errorListener) {
         super(Method.GET, url, errorListener);
         this.clazz = clazz;
-        this.headers = headers;
         this.listener = listener;
     }
 
@@ -34,6 +36,7 @@ public class GsonRequest<T> extends Request<T> {
             String json = new String(
                     response.data,
                     HttpHeaderParser.parseCharset(response.headers));
+            Log.i("test", json);
             return Response.success(
                     gson.fromJson(json, clazz),
                     HttpHeaderParser.parseCacheHeaders(response));
