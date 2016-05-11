@@ -3,7 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="margin">6dp</dimen>
-    <dimen name="pnrrowmargin">14dp</dimen>
+    <dimen name="pnrrowmargin">16dp</dimen>
     <dimen name="heightbutton">50dp</dimen>
     <dimen name="recyclerview_margintop">25dp</dimen>
 </resources>

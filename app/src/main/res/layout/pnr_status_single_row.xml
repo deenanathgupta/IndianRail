@@ -9,27 +9,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/pnrrowmargin"
-        android:layout_marginRight="40dp"
+        android:layout_marginRight="27dp"
         android:text="1" />
 
     <TextView
         android:id="@+id/txtBookingStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="60dp"
+        android:paddingRight="20dp"
         android:text="S7,10,GN" />
 
     <TextView
         android:id="@+id/txtcurrentstatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="80dp"
         android:text="CNF" />
 
     <TextView
         android:id="@+id/txtcoachPosition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="@dimen/pnrrowmargin"
         android:text="0" />
 </LinearLayout>

@@ -1,5 +1,6 @@
 package indianrail.robosoft.com.indianrail;
 
+import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -32,11 +33,13 @@ public class PnrStatusActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private FrameLayout mFrameLayout;
     private Button mButton;
+    private ProgressDialog mProgressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pnr_status);
+
         setSupportActionBar((Toolbar) findViewById(R.id.actionbar));
         getSupportActionBar().setTitle("Check PNR Status");
         mEditText = (EditText) findViewById(R.id.edtPnrNo);
@@ -54,34 +57,43 @@ public class PnrStatusActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String url = AppData.INDIANRAILAPI + "/pnr_status/pnr/" + mEditText.getText().toString() + "/apikey/jxqbq3625/";
-                GsonRequest gsonRequest = new GsonRequest(url, PnrStatus.class, new Response.Listener() {
-                    @Override
-                    public void onResponse(Object response) {
+                if (mEditText.getText().toString().length() == 10) {
+                    mProgressDialog = ProgressDialog.show(PnrStatusActivity.this, "", "Please Wait...");
+                    GsonRequest gsonRequest = new GsonRequest(url, PnrStatus.class, new Response.Listener() {
+                        @Override
+                        public void onResponse(Object response) {
 
-                        PnrStatus pnrstatus = (PnrStatus) response;
-                        ArrayList<PassengersItem> passengersItems = (ArrayList<PassengersItem>) pnrstatus.passengers;
-                        if (pnrstatus.train_name != null) {
-                            mFrameLayout.setVisibility(View.VISIBLE);
-                            mtxtTrainName.setText(pnrstatus.train_name);
-                            mtxtFrom.setText(pnrstatus.fromStation.name);
-                            mtxtTo.setText(pnrstatus.reservationUpto.name);
-                            mtxtJournyDate.setText(pnrstatus.doj);
-                            mtxtChartStatus.setText(pnrstatus.chart_prepared);
-                            mRecyclerView.setLayoutManager(new LinearLayoutManager(PnrStatusActivity.this));
-                            mRecyclerView.setAdapter(new PnrStatusRecyclerviewAdapter(passengersItems));
-                        } else {
-                            Log.i("test", "Error");
+                            PnrStatus pnrstatus = (PnrStatus) response;
+                            ArrayList<PassengersItem> passengersItems = (ArrayList<PassengersItem>) pnrstatus.passengers;
+                            if (pnrstatus.train_name != null) {
+                                mProgressDialog.dismiss();
+                                mFrameLayout.setVisibility(View.VISIBLE);
+                                mtxtTrainName.setText(pnrstatus.train_name);
+                                mtxtFrom.setText(pnrstatus.fromStation.name);
+                                mtxtTo.setText(pnrstatus.reservationUpto.name);
+                                mtxtJournyDate.setText(pnrstatus.doj);
+                                mtxtChartStatus.setText(pnrstatus.chart_prepared);
+                                mRecyclerView.setLayoutManager(new LinearLayoutManager(PnrStatusActivity.this));
+                                mRecyclerView.setAdapter(new PnrStatusRecyclerviewAdapter(passengersItems));
+                            } else {
+                                mProgressDialog.dismiss();
+                                Log.i("test", "Error");
+                            }
+
                         }
-
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(PnrStatusActivity.this, "Oops Something Wrong..!!!", Toast.LENGTH_SHORT).show();
-                    }
-                });
-                VolleyHelper.getInstance(PnrStatusActivity.this).addToRequestQueue(gsonRequest);
+                    }, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            mProgressDialog.dismiss();
+                            Toast.makeText(PnrStatusActivity.this, "Oops Something Wrong..!!!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    VolleyHelper.getInstance(PnrStatusActivity.this).addToRequestQueue(gsonRequest);
+                } else {
+                    Toast.makeText(PnrStatusActivity.this, "Enter Valid PNR", Toast.LENGTH_SHORT).show();
+                }
             }
+
         });
 
 
@@ -89,3 +101,4 @@ public class PnrStatusActivity extends AppCompatActivity {
 
 
 }
+/*http://api.railwayapi.com/between/source/sbc/dest/pnbe/date/12-05/apikey/<apikey>/*/
