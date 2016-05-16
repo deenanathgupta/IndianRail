@@ -42,10 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, PnrStatusActivity.class));
                 break;
             case R.id.btnSearchTrain:
-                Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent, "Select Picture"), 1);
+                startActivity(new Intent(this, TrainStatusActivity.class));
                 break;
         }
     }

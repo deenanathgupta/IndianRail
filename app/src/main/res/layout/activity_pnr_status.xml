@@ -47,14 +47,20 @@
             android:textColor="@android:color/white"
             android:textStyle="bold" />
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_below="@id/row1"
+        android:background="@android:color/holo_blue_bright" />
 
     <FrameLayout
         android:id="@+id/PnrsStatusrow2"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/row1"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:visibility="visible">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -101,7 +107,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_below="@id/from"
                         android:paddingTop="4dp"
-                        android:text="To Station              :" />
+                        android:text="@string/toStaion" />
 
                     <TextView
                         android:id="@+id/date"
@@ -109,7 +115,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/to"
                         android:paddingTop="4dp"
-                        android:text="Date of Journey    :" />
+                        android:text="@string/dateOfjouney" />
 
                     <TextView
                         android:id="@+id/chartstatus"
@@ -117,7 +123,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/date"
                         android:paddingTop="4dp"
-                        android:text="Chart Status          :" />
+                        android:text="@string/chartStatus" />
 
                 </LinearLayout>
 
@@ -133,7 +139,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@id/trainname"
                         android:paddingTop="4dp"
-                        android:text="TrainName" />
+                        android:text="@string/trainName" />
 
                     <TextView
                         android:id="@+id/txtFromStation"
@@ -142,7 +148,7 @@
                         android:layout_below="@id/txtTrainName"
                         android:layout_toRightOf="@id/from"
                         android:paddingTop="4dp"
-                        android:text="Station Name" />
+                        android:text="@string/stationName" />
 
                     <TextView
                         android:id="@+id/txtToStation"
@@ -151,7 +157,7 @@
                         android:layout_below="@id/txtFromStation"
                         android:layout_toRightOf="@id/to"
                         android:paddingTop="4dp"
-                        android:text="To Station" />
+                        android:text="@string/toStation" />
 
                     <TextView
                         android:id="@+id/txtdateOfJourny"
@@ -160,7 +166,7 @@
                         android:layout_below="@id/txtToStation"
                         android:layout_toRightOf="@id/date"
                         android:paddingTop="4dp"
-                        android:text="Journey Date" />
+                        android:text="@string/jouneyDate" />
 
                     <TextView
                         android:id="@+id/txtChartStatus"
@@ -169,15 +175,23 @@
                         android:layout_below="@+id/txtdateOfJourny"
                         android:layout_toEndOf="@+id/date"
                         android:paddingTop="4dp"
-                        android:text="Chart Status" />
+                        android:text="@string/chartStatu" />
                 </LinearLayout>
             </LinearLayout>
 
+            <View
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/layoutRow1"
+                android:background="@android:color/holo_blue_bright" />
+
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layoutRow2"
+                android:background="@android:color/holo_blue_bright"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/layoutRow1"
-                android:layout_marginTop="@dimen/margin"
                 android:orientation="horizontal">
 
                 <TextView
@@ -210,12 +224,18 @@
                     android:text="Coach Position" />
             </LinearLayout>
 
+            <View
+                android:id="@+id/horizontalline2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/layoutRow2"
+                android:background="@android:color/holo_blue_bright" />
+
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/pnrStatusRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/layoutRow1"
-                android:layout_marginTop="@dimen/recyclerview_margintop"></android.support.v7.widget.RecyclerView>
+                android:layout_below="@id/horizontalline2"></android.support.v7.widget.RecyclerView>
         </RelativeLayout>
     </FrameLayout>
 </RelativeLayout>

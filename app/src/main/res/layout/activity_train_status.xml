@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/appbar" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="From Station"
+        android:inputType="textUri"></AutoCompleteTextView>
+
+    <AutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="To Station "
+        android:inputType="textUri" />
+
+    <ImageView
+        android:id="@+id/calDatePicker"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/multiAutoCompleteTextView1"
+        android:layout_below="@+id/multiAutoCompleteTextView1"
+        android:src="@drawable/_calendar" />
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/calDatePicker"
+        android:layout_alignStart="@+id/multiAutoCompleteTextView1"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_toStartOf="@+id/calDatePicker"
+        android:focusable="false"
+        android:hint="@string/JournyDate" />
+
+    <Button
+        android:id="@+id/trainSearchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/searchbuttonColor"
+        android:text="Search"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

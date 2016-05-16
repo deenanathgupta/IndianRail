@@ -18,7 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".PnrStatusActivity" />
-        <activity android:name=".SearchTrainActivity"></activity>
+        <activity android:name=".TrainStatusActivity" />
+        <activity android:name=".LiveTrainStatusActivity" />
+        <activity android:name=".SearchResultTrain"></activity>
     </application>
 
 </manifest>
