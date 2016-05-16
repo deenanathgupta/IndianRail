@@ -15,4 +15,725 @@
     <string name="journy">No</string>
     <string name="journytrainName">Name</string>
     <string name="Boardingpoint">Board Po.</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="JournyDate">Jouney Date</string>
+    <string name="toStaion">To Station              :</string>
+    <string name="dateOfjouney">Date of Journey    :</string>
+    <string name="chartStatus">Chart Status          :</string>
+    <string name="trainName">Chart Status          :</string>
+    <string name="stationName">Station Name</string>
+    <string name="toStation">To Station</string>
+    <string name="jouneyDate">Journey Date</string>
+    <string name="chartStatu">Chart Status</string>
+    <string-array name="station_code">
+        <item>ABU ROAD ABR</item>
+        <item>adilabad adb</item>
+        <item>ADONI AD</item>
+        <item>ADRA ADRA</item>
+        <item>AGARTALA AGTL</item>
+        <item>AGRA FORT AF</item>
+        <item>AGRA CANTT. AGC</item>
+        <item>AHMADNAGAR ANG</item>
+        <item>AHMEDABAD ADI</item>
+        <item>AJMER AII</item>
+        <item>Ajni AJNI</item>
+        <item>AKOLA AK</item>
+        <item>ALIGARH ALJN</item>
+        <item>ALIPURDUAR Jn. APDJ</item>
+        <item>ALLAHABAD ALD</item>
+        <item>ALAPPUZHA ALLP</item>
+        <item>ALNAWAR Jn. LWR</item>
+        <item>ALUVA AWY</item>
+        <item>ALWAR AWR</item>
+        <item>AMALNER AN</item>
+        <item>AMB ANDAVRA AADR</item>
+        <item>AMBALA CANTT. UMB</item>
+        <item>AMBIKAPUR abkp</item>
+        <item>AMLa Amla</item>
+        <item>AMRITSAR ASR</item>
+        <item>ANAKAPALLE AKP</item>
+        <item>ANAND ANND</item>
+        <item>ANAND NAGAR ANDN</item>
+        <item>ANAND VIHar Terminus ANVT</item>
+        <item>ANANTAPUR ATP</item>
+        <item>ANGUL ANGL</item>
+        <item>ANNAVARAM ANV</item>
+        <item>ANUPPUR apr</item>
+        <item>ARA ARA</item>
+        <item>ARAKKONAM AJJ</item>
+        <item>ARSIKERE ASK</item>
+        <item>ASANSOL ASN</item>
+        <item>AUNRIHAR ARJ</item>
+        <item>AURANGABAD AWB</item>
+        <item>AYODHYA AY</item>
+        <item>AZAMGARH AMH</item>
+        <item>AZIMGANJ Jn. AZ</item>
+        <item>BADARPUR BPB</item>
+        <item>BADNERA Jn. BD</item>
+        <item>BAGALKOT Bgk</item>
+        <item>BAGHPAT ROAD BPM</item>
+        <item>BAIDYANATHDHAM BDME</item>
+        <item>BAKTHIYARPUR bKP</item>
+        <item>BALASORE BLS</item>
+        <item>BALAGHAT BTC</item>
+        <item>BALANGIR blgr</item>
+        <item>baluGAON BAlU</item>
+        <item>BALURGHAT BLGT</item>
+        <item>BALHARSHAH BPQ</item>
+        <item>BALLIA BUI</item>
+        <item>BANARHAT BNQ</item>
+        <item>BANDA Jn. BNDA</item>
+        <item>BANDEL Jn. BDC</item>
+        <item>BANDIKUI Jn. BKI</item>
+        <item>BANdra (T) Bdts</item>
+        <item>BANGALORE CITY SBC</item>
+        <item>BANGALORE CANTT. BNC</item>
+        <item>BANGARAPET BWt</item>
+        <item>bangriposi bgy</item>
+        <item>BANKURA BQA</item>
+        <item>BANMANKHI BNKI</item>
+        <item>BAPATLA BPP</item>
+        <item>BARAUNI Jn. BJU</item>
+        <item>BARAUT BTU</item>
+        <item>BARAPALLI brPL</item>
+        <item>BARDDHAMAN Jn. BWN</item>
+        <item>BAREILLY BE</item>
+        <item>BARGARH ROAD BRGA</item>
+        <item>BARHNI BNY</item>
+        <item>BARKAKANA BRKA</item>
+        <item>BARMER BME</item>
+        <item>BAROG BOF</item>
+        <item>BARSOI BOE</item>
+        <item>BARWADIH BRWD</item>
+        <item>BASAR BSX</item>
+        <item>BASTI BST</item>
+        <item>BAThINDA Jn. BTI</item>
+        <item>BAYANA BXN</item>
+        <item>BEAS BEAS</item>
+        <item>BEAWAR BER</item>
+        <item>BELAPUR BAP</item>
+        <item>BELGAUM BGM</item>
+        <item>BELLARY Jn. BAY</item>
+        <item>BETTIAH BTH</item>
+        <item>BETUL BZU</item>
+        <item>BHADOHI BOY</item>
+        <item>BHADRAK BHC</item>
+        <item>BHAGALPUR BGP</item>
+        <item>Bhagat Ki Kothi BGKI</item>
+        <item>BHARATPUR BTE</item>
+        <item>BHARUCH BH</item>
+        <item>BHATAPARA BYT</item>
+        <item>BHATKAL BTJL</item>
+        <item>BHATNI BTT</item>
+        <item>BHAVNAGAR (t) BVC</item>
+        <item>BHAWANIPATNA BWPI</item>
+        <item>BHILWARA BHL</item>
+        <item>BHIMAVARAM Jn. BVRM</item>
+        <item>BHIMAVARAM TOWN BVRT</item>
+        <item>BHIND BIX</item>
+        <item>BHIWANI BNW</item>
+        <item>BHOPAL BPL</item>
+        <item>BHUBANESWAR BBS</item>
+        <item>BHUJ BHUJ</item>
+        <item>BHUSAVAL BSL</item>
+        <item>BIJAPUR BJP</item>
+        <item>BIJNOR BJO</item>
+        <item>BIKANER BKN</item>
+        <item>BILASPUR jn. BSP</item>
+        <item>BINA BINA</item>
+        <item>BINNAGURI BNV</item>
+        <item>BIRUR RRB</item>
+        <item>BITRAGUNTA BTTR</item>
+        <item>biyavara rajgarh brrg</item>
+        <item>BOBBILI VBL</item>
+        <item>BOINDA bONA</item>
+        <item>Barapalli brpl</item>
+        <item>baghbahar bgbr</item>
+        <item>BOKARO STEEL CITY BKSC</item>
+        <item>bOLPUR SHANTINIKETAn bhp</item>
+        <item>BORIVALI BVI</item>
+        <item>BOTAD BTD</item>
+        <item>BUDAUN BEM</item>
+        <item>bundi budi</item>
+        <item>BURHANPUR BAU</item>
+        <item>BURHWAL BUW</item>
+        <item>BUXAR BXR</item>
+        <item>CANACONA </item>
+        <item>CHAKIA CAA</item>
+        <item>CHAKKI BANK </item>
+        <item>CHALISGAON CSN</item>
+        <item>CHAMPA CPH</item>
+        <item>CHANDAUSI CH</item>
+        <item>chanderiya cna</item>
+        <item>CHANDIGARH CDG</item>
+        <item>CHANDIL CNI</item>
+        <item>CHANDRAPUR CD</item>
+        <item>CHANDRAPURA CRP</item>
+        <item>CHAPARMUKH CPK</item>
+        <item>cHATRAPUR CAP</item>
+        <item>CHENGALPATTU Jn. CGL</item>
+        <item>CHENGANNUR CNGR</item>
+        <item>CHENNAI CENTRAL MAS</item>
+        <item>CHENNAI EGMORE MS</item>
+        <item>CHHAPRA CPR</item>
+        <item>CHHINDWARA cwa</item>
+        <item>CHIDAMBARAM CDM</item>
+        <item>CHIKJAJUR JRU</item>
+        <item>CHIPLUN CHI</item>
+        <item>CHIRALA CLX</item>
+        <item>CHITRAKOOTDHAM KARVI CKTD</item>
+        <item>CHITTARANJAN CRJ</item>
+        <item>CHITTAURGARH COR</item>
+        <item>CHITTOOR CTO</item>
+        <item>CHOPAN CPU</item>
+        <item>CHUNAR CAR</item>
+        <item>CHURU CUR</item>
+        <item>COIMBATORE Jn. CBE</item>
+        <item>coonoor ONR</item>
+        <item>CUDDALORE PORT CUPJ</item>
+        <item>CUDDAPAH HX</item>
+        <item>CUTTACK CTC</item>
+        <item>DADAR DR</item>
+        <item>DAHANU ROAD DRD</item>
+        <item>DAHOD DHD</item>
+        <item>DALGAON DLO</item>
+        <item>DALTONGANJ DTO</item>
+        <item>DALLIRAJHARA DRZ</item>
+        <item>DAMOH DMO</item>
+        <item>DANAPUR DNR</item>
+        <item>DARBHANGA DBG</item>
+        <item>DAUND DD</item>
+        <item>DAVANGERE DVG</item>
+        <item>DEHRADUN DDN</item>
+        <item>DEHRI-ON-SONE DOS</item>
+        <item>DELHI DLI</item>
+        <item>NEW DELHI NDLS</item>
+        <item>DELHI CANTT. DEC</item>
+        <item>DELHI SARAI ROHILLA DEE</item>
+        <item>DELHI SHAHDARA DSA</item>
+        <item>DEORIASADAR DEOS</item>
+        <item>DEVLALI DVL</item>
+        <item>DHAMANGAON DMN</item>
+        <item>DHANBAD DHN</item>
+        <item>DHARMABAD DAB</item>
+        <item>dharmanagar dmr</item>
+        <item>DHARMAPURI DPJ</item>
+        <item>DHARMAVARAM DMM</item>
+        <item>DHARWAD DWR</item>
+        <item>DHASA DAS</item>
+        <item>DHAULPUR DHO</item>
+        <item>Dhenuanal dnul</item>
+        <item>DHOLA DLJ</item>
+        <item>DHONE DHNE</item>
+        <item>DHRANGADHRA </item>
+        <item>dhubri dbb</item>
+        <item>DHURI DUI</item>
+        <item>DIBRUGARH DBRG</item>
+        <item>DIBRUGARH TOWN DBRT</item>
+        <item>digha dgha</item>
+        <item>DILDARNAGAR DLN</item>
+        <item>DIMAPUR DMV</item>
+        <item>DINDIGUL Jn. DG</item>
+        <item>DONGARGARH DGG</item>
+        <item>DORNAKAL DKJ</item>
+        <item>DUNGARPUR DNRP</item>
+        <item>DURG DURG</item>
+        <item>DURGAPUR DGR</item>
+        <item>duvvada dvd</item>
+        <item>DWARKA DWK</item>
+        <item>ELURU EE</item>
+        <item>ERNAKULAM Jn. ERS</item>
+        <item>ERNAKULAM TOWN ERN</item>
+        <item>ERODE ED</item>
+        <item>ETAWAH ETW</item>
+        <item>FAIZABAD FD</item>
+        <item>FARIDABAD FDB</item>
+        <item>FARRUKHABAD FBD</item>
+        <item>FATEhABAD CHAND FTD</item>
+        <item>FATEHPUR FTP</item>
+        <item>FATUHA FUT</item>
+        <item>FAZILKA FKA</item>
+        <item>FIROZABAD FZD</item>
+        <item>FIROZPUR CITY FZP</item>
+        <item>FIROZPUR CANTT. FZR</item>
+        <item>FORBESGANJ FBG</item>
+        <item>FURKATING FKG</item>
+        <item>GADAG GDG</item>
+        <item>GAJRAULA GJL</item>
+        <item>GANDHIDHAM GIM</item>
+        <item>GANDHINAGAR GADJ</item>
+        <item>GANGAPUR CITY GGC</item>
+        <item>GARWA ROAD GHD</item>
+        <item>GAYA </item>
+        <item>GEVRA ROAD GAD</item>
+        <item>GHATSILA GTS</item>
+        <item>GHAZIABAD GZB</item>
+        <item>GOALPARA TOWN GLPT</item>
+        <item>GODHRA GDA</item>
+        <item>GOLA GOKARANNATH GK</item>
+        <item>GONDA GD</item>
+        <item>GONDIA G</item>
+        <item>GOOTY GY</item>
+        <item>GORAKHPUR GKP</item>
+        <item>GOSsAINGAon HAT GOGH</item>
+        <item>GUDIVADA GDV</item>
+        <item>GUDUR GDR</item>
+        <item>GULBARGA GR</item>
+        <item>GUNA GUNA</item>
+        <item>GUNTAKAL GTL</item>
+        <item>GUNTUR GNT</item>
+        <item>gurgaon ggn</item>
+        <item>GUruvayUR Guv</item>
+        <item>GUWAHATI GHY</item>
+        <item>GWALIOR GWL</item>
+        <item>GYANPUR ROAD GYN</item>
+        <item>HABIBGANJ HBJ</item>
+        <item>HAJIPUR HJP</item>
+        <item>HALDIA HLZ</item>
+        <item>HALDIBARI HDB</item>
+        <item>HAMILTONGANJ HOJ</item>
+        <item>HANUMANGARH HMH</item>
+        <item>HAPA HAPA</item>
+        <item>HAPUR HPU</item>
+        <item>HARDA HD</item>
+        <item>HARIDWAR HW</item>
+        <item>HARIHAR HRR</item>
+        <item>HARPALPUR HPP</item>
+        <item>HASIMARA HSA</item>
+        <item>HATIA HTE</item>
+        <item>HAZUR SAHIB NANDED NED</item>
+        <item>HILSA HIL</item>
+        <item>HIMMAT NAGAR HMT</item>
+        <item>HINDUPUR HUP</item>
+        <item>HINGOLI HNL</item>
+        <item>HISAR HSR</item>
+        <item>HOSHANGABAD HBD</item>
+        <item>HOSPET HPT</item>
+        <item>HOSUR HSRA</item>
+        <item>HOWBAdH HBG</item>
+        <item>HOWRAH HWH</item>
+        <item>HUBLI UBL</item>
+        <item>HYDERABAD HYB</item>
+        <item>IGATPURI IGP</item>
+        <item>INDARA IAA</item>
+        <item>INDORE INDB</item>
+        <item>ISLAMPUR IPR</item>
+        <item>ITARSI ET</item>
+        <item>JABALPUR JBP</item>
+        <item>Jagdalpur jdb</item>
+        <item>JAIPUR JP</item>
+        <item>Jaypur jyp</item>
+        <item>JAISALMER JSM</item>
+        <item>JAJPUR KEONJHAR ROAD JJKR</item>
+        <item>JAKHAL JHL</item>
+        <item>JALAMB JM</item>
+        <item>JALANDHAR CANTT. JRC</item>
+        <item>JALANDHAR CITY JUC</item>
+        <item>JALGAON JL</item>
+        <item>JALNA J</item>
+        <item>JALPAIGURI JPG</item>
+        <item>JAMALPUR JMP</item>
+        <item>JAMMU TAWI JAT</item>
+        <item>JAMNAGAR JAM</item>
+        <item>JANGHAI JNH</item>
+        <item>JASIDIH JSME</item>
+        <item>JAUNPUR Jn. JNU</item>
+        <item>JAYNAGAR JYG</item>
+        <item>JETALSAR JLR</item>
+        <item>JHAJHA JAJ</item>
+        <item>JHANSI JHS</item>
+        <item>JHARGRAM JGM</item>
+        <item>JHARSUGUDA JSG</item>
+        <item>JIND JIND</item>
+        <item>JODHPUR JU</item>
+        <item>jogbani JBN</item>
+        <item>JOLARPETTAI JTJ</item>
+        <item>JORHAT JT</item>
+        <item>JUNAGARH Jn. JND</item>
+        <item>KACHEGUDA KCG</item>
+        <item>KAKINADA PORT COA</item>
+        <item>KALCHINI KCF</item>
+        <item>KALKA KLK</item>
+        <item>KALOL KLL</item>
+        <item>KALYAN KYN</item>
+        <item>KAMAKHYA KYQ</item>
+        <item>KANCHIPURAM CJ</item>
+        <item>KANDHLA KQL</item>
+        <item>KANNIYAKUMARI CAPE</item>
+        <item>KANNUR CAN</item>
+        <item>KANPUR CENTRAL CNB</item>
+        <item>KANPUR ANWARGANJ CPA</item>
+        <item>KAPTANGANJ CPJ</item>
+        <item>Karaikal kik</item>
+        <item>KARAIKKUDI Jn. KKDI</item>
+        <item>KARimganj kxj</item>
+        <item>KARNAL KUN</item>
+        <item>KARUR KRR</item>
+        <item>KARWAR KAWR</item>
+        <item>KASARaGOD KGQ</item>
+        <item>KASGANJ KSJ</item>
+        <item>KATHGODAM KGM</item>
+        <item>KATIHAR KIR</item>
+        <item>KATNI KTE</item>
+        <item>KATNI MURWARA KMZ</item>
+        <item>KATPADI KPD</item>
+        <item>KATWA KWAE</item>
+        <item>Station Code Index</item>
+        <item>TAG-13</item>
+        <item>KAZIPET KZJ</item>
+        <item>kESINGA ksng</item>
+        <item>KENDUJHARGARH KDJR</item>
+        <item>KHAGARIA KGG</item>
+        <item>KHALILABAD KLD</item>
+        <item>KHAMMAM KMT</item>
+        <item>KHANDWA KNW</item>
+        <item>KHARAGPUR KGP</item>
+        <item>KHEKRA KEX</item>
+        <item>KHURDA ROAD KUR</item>
+        <item>KHURJA KRJ</item>
+        <item>KISHANGANJ KNE</item>
+        <item>KISHANGARH KSG</item>
+        <item>KIUL KIUL</item>
+        <item>KOCHUVELI KCVL</item>
+        <item>KODAIKANAL ROAD KQN</item>
+        <item>kolkata koaa</item>
+        <item>kollam QLN</item>
+        <item>KOPERGAON KPG</item>
+        <item>KORAPUT KRPU</item>
+        <item>KORBA KRBA</item>
+        <item>KOTA KOTA</item>
+        <item>KOTDWARA KTW</item>
+        <item>KOT KAPURA KKP</item>
+        <item>KOTTAYAM KTYM</item>
+        <item>KOZHIKODE CLT</item>
+        <item>KRISHNANAGAR CITY KNJ</item>
+        <item>KRISHNARAJAPURAM KJM</item>
+        <item>kumarghat kugt</item>
+        <item>KUMBAKONAM KMU</item>
+        <item>KUNDAPURA KUDA</item>
+        <item>KURDUWADI KWV</item>
+        <item>KURNOOL TOWN KRNT</item>
+        <item>KURUKSHETRA KKDE</item>
+        <item>LAKHIMPUR LMP</item>
+        <item>LAKSAR LRJ</item>
+        <item>LALGARH LGH</item>
+        <item>LALGOLA LGL</item>
+        <item>LALITPUR LAR</item>
+        <item>LALKUAN JN. LKU</item>
+        <item>LATUR LUR</item>
+        <item>LEDO LEDO</item>
+        <item>LOHARU LHU</item>
+        <item>LOKMANYA TILAK (T) LTT</item>
+        <item>LONAVLA LNL</item>
+        <item>LONDA LD</item>
+        <item>LOWER HALFLONG LFG</item>
+        <item>LUCKNOW LJN/LKO</item>
+        <item>LUDHIANA LDH</item>
+        <item>LUMDING LMG</item>
+        <item>LUNI LUNI</item>
+        <item>MACHILIPATNAM MTM</item>
+        <item>MADARIHAT MDT</item>
+        <item>MADDUR MAD</item>
+        <item>MADGAON (GOA) MAO</item>
+        <item>MADHUBANI MBI</item>
+        <item>MADHUPUR MDP</item>
+        <item>MADURAI Jn. MDU</item>
+        <item>MAHASAMUND msmD</item>
+        <item>MAHBUBNAGAR MBNR</item>
+        <item>MAHuva mhv</item>
+        <item>MUNIGUDA mngd</item>
+        <item>MAHESANA MSH</item>
+        <item>MAHOBA MBA</item>
+        <item>MAILANI MLN</item>
+        <item>MAKSI MKC</item>
+        <item>MALDA TOWN MLDT</item>
+        <item>MANAMADURAI MNM</item>
+        <item>MANDUADIH MUV</item>
+        <item>MANGALORE CENTRAL MAQ</item>
+        <item>MANGALORE JN. MAJN</item>
+        <item>MANIKPUR MKP</item>
+        <item>MANKAPUR MUR</item>
+        <item>MANMAD MMR</item>
+        <item>Mannargudi MQ</item>
+        <item>MANSI MNE</item>
+        <item>manu manu</item>
+        <item>MARIANI MXN</item>
+        <item>MARWAR Jn. MJ</item>
+        <item>MATHURA MTJ</item>
+        <item>MAU MAU</item>
+        <item>MAYILADUTURAI Jn. MV</item>
+        <item>MEERUT CITY MTC</item>
+        <item>MERTA ROAD MTD</item>
+        <item>METTUPALAYAM MTP</item>
+        <item>MIDNAPore MDN</item>
+        <item>MIRAJ MRJ</item>
+        <item>MIRYALAGUDA MRGA</item>
+        <item>MIRZAPUR MZP</item>
+        <item>MOGA MOF</item>
+        <item>MOKAMA mka</item>
+        <item>PUDUKOTTAI PDKT</item>
+        <item>PULGAON PLO</item>
+        <item>PUNE Jn. PUNE</item>
+        <item>PURANPUR PP</item>
+        <item>PURI PURI</item>
+        <item>PURNA PAU</item>
+        <item>PURNIA PRNA</item>
+        <item>PURULIA PRR</item>
+        <item>RADHIKAPUR RDP</item>
+        <item>RAE BARELI RBL</item>
+        <item>RAICHUR RC</item>
+        <item>RAIGARH RIG</item>
+        <item>RAIPUR R</item>
+        <item>RAJAHMUNDRY RJY</item>
+        <item>RAJA-KA-SAHASPUR RJK</item>
+        <item>RAJA-KI-MANDI RKM</item>
+        <item>RAJENDRANAGAR RJQ</item>
+        <item>RAJGIR RGD</item>
+        <item>RAJKOT RJT</item>
+        <item>RAJNANDGAON RJN</item>
+        <item>RAJPURA RPJ</item>
+        <item>RAMAGUNDAM RDM</item>
+        <item>RAMANATHAPURAM RMD</item>
+        <item>RAMESWARAM RMM</item>
+        <item>RAMNAGAR </item>
+        <item>RAMPURHAT RPH </item>
+        <item>RANAGHAT RHA </item>
+        <item>RANCHI RNC </item>
+        <item>RANGAPARA NORTH RPAN </item>
+        <item>RANGIYA RNY </item>
+        <item>RANINAGAR ROJ </item>
+        <item>RATANGARH RTGH </item>
+        <item>RATLAM RTM </item>
+        <item>RATNAGIRI RN </item>
+        <item>RAWATGANJ RJ</item>
+        <item>RAXAUL RXL</item>
+        <item>RAYAGADA RGDA</item>
+        <item>RENIGUNTA RU</item>
+        <item>REWA REWA</item>
+        <item>REWARI RE</item>
+        <item>RINGUS RGS</item>
+        <item>ROHTAK ROK</item>
+        <item>ROORKEE RK</item>
+        <item>ROURKELA ROU</item>
+        <item>SADULPUR SDLP</item>
+        <item>SAGAR jambagaru SRF</item>
+        <item>SAGAULI SGL</item>
+        <item>SAGOUR SGO</item>
+        <item>SAHARANPUR SRE</item>
+        <item>SAHARSA SHC</item>
+        <item>SAHIBGANJ SBG</item>
+        <item>SAI NAGAR SHIRDI SNSI</item>
+        <item>SALEM SA</item>
+        <item>SALEMPUR SRU</item>
+        <item>SAMALKOT SLO</item>
+        <item>SAMASTIPUR SPJ</item>
+        <item>SAMBALPUR SBP</item>
+        <item>SAMBALPUR CITY SBPY</item>
+        <item>SAMDARI SMR</item>
+        <item>SAMUKTALA road AMTA</item>
+        <item>SANGLI SLI</item>
+        <item>santragachi src</item>
+        <item>SARNATH SRNT</item>
+        <item>SATARA STR</item>
+        <item>SATNA STA</item>
+        <item>SATTENAPALLE SAP</item>
+        <item>SAWAIMADHOPUR SWM</item>
+        <item>SAWANTWADI ROAD SWV</item>
+        <item>SEALDAH SDAH</item>
+        <item>SECUNDERABAD SC</item>
+        <item>SENGOTTAI SCT</item>
+        <item>SENSOA scf</item>
+        <item>SEWAGRAM SEGM</item>
+        <item>SHAHABAD SDB</item>
+        <item>SHAHGANJ SHG</item>
+        <item>SHAHJAHANPUR SPN</item>
+        <item>SHAHPUR PATOREE SPP</item>
+        <item>SHAKTINAGAR SKTN</item>
+        <item>SHALIMAR SHM</item>
+        <item>SHAMGARH SGZ</item>
+        <item>SHAMLI SMqL</item>
+        <item>SHIKOHABAD SKB</item>
+        <item>SHIMLA SML</item>
+        <item>SHIMOGA TOWN SMET</item>
+        <item>SHIVPURI SVPI</item>
+        <item>SHORANUR JN. SRR</item>
+        <item>SHRI MAHABIRJI SMBJ</item>
+        <item>SIHOR gujarat SOJN</item>
+        <item>SIKAR SIKR</item>
+        <item>MORADABAD MB</item>
+        <item>MOTIHARI MKI</item>
+        <item>MUDKHED MUE</item>
+        <item>MUGHALSARAI MGS</item>
+        <item>MUMBAI CENTRAL BCT</item>
+        <item>MUMBAI CST CSTM</item>
+        <item>Muniguda mngd</item>
+        <item>MURI MURI</item>
+        <item>MURKeONGSELEK MZS</item>
+        <item>MURTAJAPUR MZR</item>
+        <item>MUZAFFAR NAGAR MOZ</item>
+        <item>MUZAFFARPUR MFP</item>
+        <item>MYSORE MYS</item>
+        <item>nabadwipdham ndae</item>
+        <item>NADIAD ND</item>
+        <item>NADIKUDi NDKD</item>
+        <item>Nagappattinam Ngt</item>
+        <item>nagarkata nkb</item>
+        <item>NAGARSOL NSL</item>
+        <item>NAGBHIR NAB</item>
+        <item>NAGDA NAD</item>
+        <item>NAGERCOIL Jn. NCJ</item>
+        <item>NAGORE NCR</item>
+        <item>NAGPUR NGP</item>
+        <item>nagrakata nkb</item>
+        <item>NAINPUR NIR</item>
+        <item>NAJIBABAD NBD</item>
+        <item>NALANDA NLD</item>
+        <item>NALGONDA NLDA</item>
+        <item>Namakkal nmkl</item>
+        <item>NANDALUR NRE</item>
+        <item>NANDGAON NGN</item>
+        <item>NANDURBAR NDB</item>
+        <item>NANDYAL NDL</item>
+        <item>NANGAL DAM NLDM</item>
+        <item>NARKATIAGANJ NKE</item>
+        <item>NARASAPUR NS</item>
+        <item>NARSINGPUR NU</item>
+        <item>NARWANA NRW</item>
+        <item>NASIK ROAD NK</item>
+        <item>NAUGARH NUH</item>
+        <item>NELLORE NLR</item>
+        <item>netajI subhash chandra bose gomoh GMO</item>
+        <item>NEW ALIPURDUAR NOQ</item>
+        <item>NEW BONGAIGAON NBQ</item>
+        <item>NEW COOCHBEHAR NCB</item>
+        <item>NEW DELHI NDLS</item>
+        <item>NEW FARAKKA NFK</item>
+        <item>NEW JALPAIGURI NJP</item>
+        <item>NEWMAL Jn. NMZ</item>
+        <item>NEW TINSUKIA NTSK</item>
+        <item>NIDADAVOLU NDD</item>
+        <item>Nidamangalam NMJ</item>
+        <item>NIDUBROLU NDO</item>
+        <item>NIMACH NMH</item>
+        <item>NIZAMABAD NZB</item>
+        <item>NIZAMUDDIN NZM</item>
+        <item>NOLI NOLI</item>
+        <item>NORTH LAKHIMPUR NLP</item>
+        <item>odlabari odb</item>
+        <item>OKHA OKHA</item>
+        <item>ONGOLE OGL</item>
+        <item>ORAI ORAI</item>
+        <item>PACHORA PC</item>
+        <item>Palani PLNI</item>
+        <item>PALANPUR PNU</item>
+        <item>PALASA PSA</item>
+        <item>PALakkad PGT</item>
+        <item>PALakkad TOWN PGTN</item>
+        <item>PALIAKALAN PLK</item>
+        <item>PANDHARAPUR PVR</item>
+        <item>PANIPAT PNP</item>
+        <item>pARADEEP PRDP</item>
+        <item>PARASNATH PNME</item>
+        <item>PANVEL PNVL</item>
+        <item>PARBHANI PBN</item>
+        <item>pARVATIPURAM TOWN PVPT</item>
+        <item>PATHANKOT PTK</item>
+        <item>PATIALA PTA</item>
+        <item>PATNA PNBE</item>
+        <item>PATNA SAHIB PNC</item>
+        <item>PHALODI PLC</item>
+        <item>PHAPHAMAU PFM</item>
+        <item>PHULERA FL</item>
+        <item>PILIBHIT PBE</item>
+        <item>PIPARIYA PPI</item>
+        <item>PODANUR PTJ</item>
+        <item>PORBANDAR PBR</item>
+        <item>PRATAPGARH PBH</item>
+        <item>Puducherry pdy</item>
+        <item>SILCHAR SCL</item>
+        <item>SILGHAT SHTT</item>
+        <item>SILIGURI SGUJ</item>
+        <item>SILIGURI TOWN SGuT</item>
+        <item>SIMALuGURI SLGR SINGRAULI SGRL</item>
+        <item>SIRPUR KAGAZNAGAR SKZR</item>
+        <item>SIRSA SSA</item>
+        <item>SISWA BAZAR SBZ</item>
+        <item>SITAMARHI SMI</item>
+        <item>SITAPUR city SPC</item>
+        <item>SITAPUR CANTT. SCC</item>
+        <item>SIURI SURI</item>
+        <item>SIWAN SV</item>
+        <item>SOJAT ROAD SOD</item>
+        <item>SOLAN SOL</item>
+        <item>SOLAPUR SUR</item>
+        <item>SOMNATH SMNH</item>
+        <item>SOMPETA SPT</item>
+        <item>SONPUR SEE</item>
+        <item>SRI CHHATRAPATI SHAHU MAHARAJ (T) CSMT</item>
+        <item>SRI DUNGARgARH SDgH</item>
+        <item>SRIGANGA NAGAR SGNr</item>
+        <item>SRIKAKULAM ROAD CHE</item>
+        <item>SRI SAThYASAI PRASHANTI NILAYAM SSPN</item>
+        <item>Sujangarh sujh</item>
+        <item>SULTANPUR SLN</item>
+        <item>SURAT ST</item>
+        <item>SURATGARH SOG</item>
+        <item>SURATHKAL Sl</item>
+        <item>SURENDRA NAGAR SUNR</item>
+        <item>TADEPALLIGUDEM TDD</item>
+        <item>TAMBARAM TBM</item>
+        <item>TATANAGAR TATA</item>
+        <item>Thalassery TLY</item>
+        <item>TENALI TEL</item>
+        <item>TENKASI TS</item>
+        <item>TEZPUR TZTB</item>
+        <item>THANJAVUR TJ</item>
+        <item>THIRUVARUR. TVR</item>
+        <item>TIRUchchirappalli Jn. TPJ</item>
+        <item>TIRUCHENDUR tcn</item>
+        <item>TIRUNELVELI TEN</item>
+        <item>TIRUPATI TPTY</item>
+        <item>tiruppur TUP</item>
+        <item>TIRUR TIR</item>
+        <item>TITLAGARH TIG</item>
+        <item>Thrisur TCR</item>
+        <item>Thiruvananthapuram TVC</item>
+        <item>Tiruvannamalai tnm</item>
+        <item>TUMSAR ROAD TMR</item>
+        <item>TUNDLA TDL</item>
+        <item>TUNI TUNI</item>
+        <item>TUTICORIN TN</item>
+        <item>UDAIPUR CITY UDZ</item>
+        <item>UDHAMPUR UHP</item>
+        <item>UDHNA UDN</item>
+        <item>UDUPI UD</item>
+        <item>UJJAIN UJN</item>
+        <item>UNA UNA</item>
+        <item>UNCHAHAR UCR</item>
+        <item>UNNAO ON</item>
+        <item>VADAKARA BDJ</item>
+        <item>VADODARA BRC</item>
+        <item>VALSAD BL</item>
+        <item>VANCHI MANIYACHCHI Jn. MEJ</item>
+        <item>VARANASI BSB</item>
+        <item>VARKALA VAK</item>
+        <item>VASAI ROAD BSR</item>
+        <item>VASCO-DA-GAMA VSG</item>
+        <item>Velankanni VLKN</item>
+        <item>VERAVAL VRL</item>
+        <item>VIDISHA BHS</item>
+        <item>VIJAYAWADA BZA</item>
+        <item>VILLUPURAM Jn. VM</item>
+        <item>VIRAMGAM VG</item>
+        <item>VIRUDUNAGAR JN. vpt</item>
+        <item>VISAKHAPATNAM VSKP</item>
+        <item>VIZIANAGARAM VZM</item>
+        <item>VRIDDHACHALAM Jn. VRI</item>
+        <item>WADI WADI</item>
+        <item>WANKANER WKR</item>
+        <item>WARANGAL WL</item>
+        <item>WARDHA Jn. WR</item>
+        <item>YESVANTPUR YPR</item>
+        <item>ZAFARABAD ZBD</item>
+    </string-array>
 </resources>

@@ -1,13 +1,17 @@
 package indianrail.robosoft.com.indianrail;
 
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -56,16 +60,15 @@ public class PnrStatusActivity extends AppCompatActivity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = AppData.INDIANRAILAPI + "/pnr_status/pnr/" + mEditText.getText().toString() + "/apikey/jxqbq3625/";
+                String url = AppData.INDIANRAILAPI + "/pnr_status/pnr/" + mEditText.getText().toString() + "/apikey/" + AppData.APIKEY + "/";
                 if (mEditText.getText().toString().length() == 10) {
                     mProgressDialog = ProgressDialog.show(PnrStatusActivity.this, "", "Please Wait...");
                     GsonRequest gsonRequest = new GsonRequest(url, PnrStatus.class, new Response.Listener() {
                         @Override
                         public void onResponse(Object response) {
-
                             PnrStatus pnrstatus = (PnrStatus) response;
                             ArrayList<PassengersItem> passengersItems = (ArrayList<PassengersItem>) pnrstatus.passengers;
-                            if (pnrstatus.train_name != null) {
+                            if (pnrstatus.train_name.length()!= 0) {
                                 mProgressDialog.dismiss();
                                 mFrameLayout.setVisibility(View.VISIBLE);
                                 mtxtTrainName.setText(pnrstatus.train_name);
@@ -77,7 +80,7 @@ public class PnrStatusActivity extends AppCompatActivity {
                                 mRecyclerView.setAdapter(new PnrStatusRecyclerviewAdapter(passengersItems));
                             } else {
                                 mProgressDialog.dismiss();
-                                Log.i("test", "Error");
+                                Toast.makeText(PnrStatusActivity.this, "Server not responding..!!", Toast.LENGTH_SHORT).show();
                             }
 
                         }
@@ -95,10 +98,21 @@ public class PnrStatusActivity extends AppCompatActivity {
             }
 
         });
-
-
     }
-
-
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            View v = getCurrentFocus();
+            if (v instanceof EditText) {
+                Rect outRect = new Rect();
+                v.getGlobalVisibleRect(outRect);
+                if (!outRect.contains((int) event.getRawX(), (int) event.getRawY())) {
+                    v.clearFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                }
+            }
+        }
+        return super.dispatchTouchEvent(event);
+    }
 }
-/*http://api.railwayapi.com/between/source/sbc/dest/pnbe/date/12-05/apikey/<apikey>/*/
