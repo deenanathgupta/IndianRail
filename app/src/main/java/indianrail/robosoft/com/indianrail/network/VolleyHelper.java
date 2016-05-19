@@ -3,6 +3,7 @@ package indianrail.robosoft.com.indianrail.network;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.support.v4.util.LruCache;
+import android.text.TextUtils;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -31,7 +32,6 @@ public class VolleyHelper {
                     public Bitmap getBitmap(String url) {
                         return cache.get(url);
                     }
-
                     @Override
                     public void putBitmap(String url, Bitmap bitmap) {
                         cache.put(url, bitmap);
@@ -59,5 +59,15 @@ public class VolleyHelper {
 
     public ImageLoader getImageLoader() {
         return mImageLoader;
+    }
+
+    public void cancelRequest(String tag) {
+
+        if (!TextUtils.isEmpty(tag)) {
+
+            mRequestQueue.cancelAll(tag);
+
+        }
+
     }
 }

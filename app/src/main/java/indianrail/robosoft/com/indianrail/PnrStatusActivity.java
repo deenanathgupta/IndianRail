@@ -50,9 +50,7 @@ public class PnrStatusActivity extends AppCompatActivity {
         mtxtTrainName = (TextView) findViewById(R.id.txtTrainName);
         mButton = (Button) findViewById(R.id.btnok);
         mFrameLayout = (FrameLayout) findViewById(R.id.PnrsStatusrow2);
-
         mRecyclerView = (RecyclerView) findViewById(R.id.pnrStatusRecyclerView);
-
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -19,7 +19,15 @@
         </activity>
         <activity android:name=".PnrStatusActivity" />
         <activity android:name=".SearchTrainActivity" />
-        <activity android:name=".TrainStatusActivity"></activity>
+        <activity android:name=".TrainStatusActivity" />
+        <activity
+            android:name=".TrainByNoActivity"
+            android:label="@string/title_activity_train_by_no"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TrainRouteActivity"
+            android:label="@string/title_activity_train_route"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

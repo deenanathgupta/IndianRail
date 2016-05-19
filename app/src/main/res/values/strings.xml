@@ -15,4 +15,26 @@
     <string name="journy">No</string>
     <string name="journytrainName">Name</string>
     <string name="Boardingpoint">Board Po.</string>
+    <string name="title_activity_train_by_no">TrainByNoActivity</string>
+    <string name="trainNameNo">Train Name/Number *</string>
+    <string name="getSchedule">Get Schedule</string>
+    <string name="clear">Clear</string>
+    <string name="title_activity_train_route">TrainRouteActivity</string>
+    <string name="trainNo">Train No</string>
+    <string name="trainName">Train Name</string>
+    <string name="sourceStation">Runs From Source</string>
+    <string name="runsOnDays">Runs On</string>
+    <string name="trainNoVal">22638</string>
+    <string name="trainNameVal">West Coach Exp</string>
+    <string name="sourceStationVal">Mangalore</string>
+    <string name="runsOnDaysVal">Mon</string>
+    <string-array name="daysName">
+        <item>Mon</item>
+        <item>Tues</item>
+        <item>Wed</item>
+        <item>Thurs</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
 </resources>

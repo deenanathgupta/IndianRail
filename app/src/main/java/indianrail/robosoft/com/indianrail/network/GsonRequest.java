@@ -2,6 +2,7 @@ package indianrail.robosoft.com.indianrail.network;
 
 import android.util.Log;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.NetworkResponse;
 import com.android.volley.ParseError;
 import com.android.volley.Request;
@@ -45,6 +46,12 @@ public class GsonRequest<T> extends Request<T> {
         } catch (JsonSyntaxException e) {
             return Response.error(new ParseError(e));
         }
+    }
+
+    @Override
+    public Map<String, String> getHeaders() throws AuthFailureError {
+        return headers != null ? headers : super.getHeaders();
+
     }
 
     @Override
