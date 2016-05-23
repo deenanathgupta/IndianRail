@@ -47,6 +47,7 @@
     <LinearLayout
         android:layout_margin="10dp"
         android:gravity="left"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/layName"
@@ -59,28 +60,89 @@
             android:text="@string/trainNoVal" />
 
         <TextView
+
             android:id="@+id/txtTrainNameVal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/trainNameVal" />
 
         <TextView
+
             android:id="@+id/txtSourceStationVal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sourceStationVal" />
 
         <Spinner
+
             android:id="@+id/daysSpinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
     </LinearLayout>
+    <LinearLayout
+        android:background="@android:color/holo_blue_bright"
+        android:layout_below="@id/layName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/laythree"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/srNo"
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stnNameAndCode"
+            android:textStyle="bold"
+            android:lines="2"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/arr"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/dep"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/day"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
   <android.support.v7.widget.RecyclerView
       android:layout_margin="10dp"
+      android:id="@+id/routeRecyler"
       android:layout_height="wrap_content"
-      android:layout_width="wrap_content"
-      android:layout_below="@id/layName">
+      android:layout_width="match_parent"
+      android:layout_below="@id/laythree">
   </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>

@@ -37,4 +37,10 @@
         <item>Sat</item>
         <item>Sun</item>
     </string-array>
+    <string name="srNo">Sr.</string>
+    <string name="stnNameAndCode">Station Name "\n" Code</string>
+    <string name="arr">Arr.</string>
+    <string name="dep">Dep.</string>
+    <string name="day">Day</string>
+    <string name="distance">Dist kms.</string>
 </resources>
